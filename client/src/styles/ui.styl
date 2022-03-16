@@ -1,0 +1,166 @@
+html.disable-scroll
+    overflow-y hidden
+
+.g-icon
+    display inline-flex
+    fill currentColor
+    width 1em
+    height 1em
+    &-stroke
+        fill none
+        stroke currentColor
+
+.g-field
+    display flex
+    flex-direction column
+    label
+        font-size 20px
+        margin-bottom 6px
+        +$phone()
+            font-size 16px
+    input, textarea, .input
+        width 100%
+        padding .65em .8em .5em
+        transition all .2s
+        border-radius .7em
+        border 2px solid $black
+        font-size 20px
+        font-weight 500
+        +$phone()
+            font-size 16px
+        &:hover
+            box-shadow 0 1px 2px rgba(#000, .05)
+        &:focus
+            background-color #fff
+            border-color $blue
+            transform scale(1.04)
+        &:disabled
+            // background-color darken($light, 5)
+            // border-color darken($light, 5)
+            color lighten(#444, 15)
+        &.invalid
+            border-color $danger
+        &::placeholder
+            color: #969696
+    textarea
+        width 100%
+        max-width 100%
+        min-width 100%
+    .value
+        font-size 16px
+        line-height 1.5
+        font-weight 450
+    .g-inputset
+        display flex
+        align-items center
+    .input-container
+        display flex
+
+.g-link
+    cursor pointer
+    text-decoration underline
+    color #333
+    
+.g-panel
+    background-color #fff
+    border-radius 15px
+
+.g-h1
+    $h1()
+.g-h2
+    $h2()
+.g-h3
+    $h3()
+.g-h4
+    $h4()
+.g-text
+    $text()
+    &.bold
+        font-weight 500
+    &.small
+        $text-small()
+small
+    $text-small()
+
+.g-edit
+    cursor pointer
+    background-color $green
+    padding 2px 5px
+    border-radius 3px
+    box-shadow 0 2px 4px rgba(#000, .1)
+    height 22px
+    width 22px
+    display flex
+    align-items center
+    justify-content center
+    display none
+    .icon
+        width 100%
+        height 100%
+        fill #fff
+
+.g-checkbox
+    display flex
+    align-items center
+    cursor pointer
+    .text
+        font-size 12px
+        line-height 17px
+        a
+            text-decoration underline
+            color #333
+        +$phone()
+            font-size 10px
+            color #828282
+    .box
+        width 21px
+        height 21px
+        margin-right 19px
+        border 1px solid #BDBDBD
+        display flex
+        align-items center
+        justify-content center
+        flex-shrink 0
+        +$phone()
+            margin-right 9px
+        .icon
+            fill none
+            // stroke #000
+            fill #000
+            width 11px
+            height 11px
+            opacity 0
+            transition opacity .15s
+    &.active
+        .box
+            background-color $primary
+            border-color $primary
+            .icon
+                opacity 1
+        &.color-success
+            .box
+                background-color $success
+                border-color $success
+        &.color-danger
+            .box
+                background-color $danger
+                border-color $danger
+    &.disabled
+        cursor default
+
+
+
+.g-btn
+    $btn()
+
+.g-share, .g-favorite
+    cursor pointer
+    font-size 24px
+    display flex
+
+.g-favorite
+    .icon-favorite-fill
+        transition all .15s
+    &.active
+        .icon-favorite-fill
+            fill $secondary

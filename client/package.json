@@ -1,0 +1,64 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.4",
+    "@vueform/multiselect": "^2.3.2",
+    "@vueform/slider": "^2.0.8",
+    "axios": "^0.25.0",
+    "core-js": "^3.6.5",
+    "js-cookie": "^3.0.1",
+    "vue": "^3.0.0",
+    "vue-flickity": "^1.2.1",
+    "vue-meta": "^3.0.0-alpha.2",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "postcss": "^8.4.5",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-svg": "~0.2.1",
+    "webpack-bundle-tracker": "0.4.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 0,
+      "no-unused-labels": 0
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
